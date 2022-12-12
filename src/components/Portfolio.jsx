@@ -59,29 +59,27 @@ const Portfolio = () => {
           {portfolios.map(({ id, src,live,git }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
+              
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <a href={live}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <div className="flex  items-center justify-center">
+                <a href={live}><button className="w-1/2 px-2 py-3  duration-200 hover:scale-105">
                   Demo
                 </button></a>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-3  duration-200 hover:scale-105">
                   <a href={git}>Code</a>
                   
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-3  duration-200 hover:scale-105">
                   
                   <Link to={`/project${id}`}>Details</Link>
                 </button>
-
-                {/* <Link to={`/project${id}`}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  
-                  
-                </button>View more</Link> */}
+                
                 
               </div>
+
             </div>
           ))}
         </div>

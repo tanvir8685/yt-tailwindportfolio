@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blog from "../components/Blog";
 import HomePage from "../components/HomePage";
 import Project1 from "../components/Project1";
 import Project2 from "../components/Project2";
@@ -21,6 +22,10 @@ const routes=createBrowserRouter([
     {
         path:'/project3',
         element:<Project3></Project3>
+    },
+    {
+        path:'/blog',
+        element:<Blog></Blog>
     }
 ])
 export default routes;
