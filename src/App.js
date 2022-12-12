@@ -1,22 +1,24 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
-import SocialLinks from "./components/SocialLinks";
+import { RouterProvider } from "react-router-dom";
+
+import routes from "./Routes/Routes";
 
 function App() {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar />
       <Home />
       <About />
+      
       <Portfolio />
       <Experience />
+      <OnlineCertification></OnlineCertification>
       <Contact />
+      
 
-      <SocialLinks />
+      <SocialLinks /> */}
+      <RouterProvider router={routes}></RouterProvider>
+      
+      
     </div>
   );
 }

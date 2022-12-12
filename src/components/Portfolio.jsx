@@ -1,37 +1,45 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import { FaGithub } from "react-icons/fa";
+
+import resell from '../assets/resell.png'
+import parlour from '../assets/parlour.png'
+import learnig from '../assets/learning.png'
+import { Link } from "react-router-dom";
+
+
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: resell,
+      live:'https://products-resale-42ae3.web.app/',
+      git:'https://github.com/tanvir8685/product-resell-client-a12'
     },
     {
       id: 2,
-      src: reactParallax,
+      src: parlour,
+      live:'https://beauty-parlour-9605d.web.app/',
+      git:'https://github.com/tanvir8685/beauty-parlour-clientside-a11'
     },
     {
       id: 3,
-      src: navbar,
+      src: learnig,
+      live:'https://tn-learning.web.app/',
+      git:'https://github.com/tanvir8685/tn-learning-clientside-a10'
     },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    // {
+    //   id: 4,
+    //   src: reactSmooth,
+    // },
+    // {
+    //   id: 5,
+    //   src: installNode,
+    // },
+    // {
+    //   id: 6,
+    //   src: reactWeather,
+    // },
   ];
 
   return (
@@ -48,7 +56,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,live,git }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,16 +64,28 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a href={live}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
+                </button></a>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a href={git}>Code</a>
+                  
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                  
+                  <Link to={`/project${id}`}>Details</Link>
                 </button>
+
+                {/* <Link to={`/project${id}`}><button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  
+                  
+                </button>View more</Link> */}
+                
               </div>
             </div>
           ))}
         </div>
+        <p  className="py-6 flex">To explore more on Github<a className="flex mx-10"  href="https://github.com/tanvir8685"> <FaGithub className="mx-2"/>  Click here</a> </p>
       </div>
     </div>
   );
