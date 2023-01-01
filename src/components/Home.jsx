@@ -11,7 +11,7 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row ">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+          <h2 className="text-4xl text-center sm:text-left sm:text-7xl font-bold text-white">
             I'm a Jr. Frontend Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
@@ -36,11 +36,11 @@ technical solutions.
           </div>
         </div>
 
-        <div className="w-3/6 mt-24 md:mt-0">
+        <div className="w-5/6 sm:w-3/4 mt-56 md:mt-0">
           <img
             src={herop}
             alt="my profile"
-            className="rounded-2xl mx-auto  md:w-full"
+            className="rounded-2xl  mx-auto  "
           />
         </div>
       </div>

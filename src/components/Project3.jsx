@@ -47,7 +47,7 @@ const Project3 = () => {
   </div>
 </div>
 
-            <div className='mt-24 '>
+            <div className='mt-24  px-4'>
                 <h2 className='text-5xl mb-4 font-bold'>Project Details</h2>
                 <p className='text-2xl font-bold'>Project Name:  TN-Learning- || <a href="https://tn-learning.web.app/">Live link</a> || <a href="https://github.com/tanvir8685/tn-learning-clientside-a10">Git Client Link</a> || <a href="https://github.com/tanvir8685/tn-learning-serverside-a10">Git Server Link</a> </p>
                 <p className='text-xl my-4'><span className='text-2xl font-bold'>About</span>: I built this website focusing on the frontend part. On this website, a learning platform

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import {Link as Tanv} from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -50,7 +51,8 @@ const NavBar = () => {
           
           
         ))}
-
+        
+        <Tanv to='/blog'> <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">Blog</li> </Tanv>
       </ul>
 
       <div
@@ -78,7 +80,7 @@ const NavBar = () => {
              
             </li>
           ))}
-          
+                  <Tanv to='/blog'> <li className="px-4 cursor-pointer capitalize  py-6 text-4xl">Blog</li> </Tanv>
           
         </ul>
         

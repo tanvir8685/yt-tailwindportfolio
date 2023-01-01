@@ -13,18 +13,21 @@ const Portfolio = () => {
     {
       id: 1,
       src: resell,
+      title:'VehicleHUB',
       live:'https://products-resale-42ae3.web.app/',
       git:'https://github.com/tanvir8685/product-resell-client-a12'
     },
     {
       id: 2,
       src: parlour,
+      title:'RhadikaParlour',
       live:'https://beauty-parlour-9605d.web.app/',
       git:'https://github.com/tanvir8685/beauty-parlour-clientside-a11'
     },
     {
       id: 3,
       src: learnig,
+      title:'TN-Learning',
       live:'https://tn-learning.web.app/',
       git:'https://github.com/tanvir8685/tn-learning-clientside-a10'
     },
@@ -56,7 +59,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src,live,git }) => (
+          {portfolios.map(({ id, src,live,git,title }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
               
@@ -64,15 +67,16 @@ const Portfolio = () => {
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <p className="py-2 px-2">Title : {title}</p>
               <div className="flex  items-center justify-center">
                 <a href={live}><button className="w-1/2 px-2 py-3  duration-200 hover:scale-105">
                   Demo
                 </button></a>
-                <button className="w-1/2 px-2 py-3  duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-2  duration-200 hover:scale-105">
                   <a href={git}>Code</a>
                   
                 </button>
-                <button className="w-1/2 px-2 py-3  duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-2  duration-200 hover:scale-105">
                   
                   <Link to={`/project${id}`}>Details</Link>
                 </button>

@@ -4,7 +4,7 @@ import routes from "./Routes/Routes";
 
 function App() {
   return (
-    <div>
+    <div className="h-full bg-gradient-to-b from-gray-800 to-black">
       {/* <NavBar />
       <Home />
       <About />

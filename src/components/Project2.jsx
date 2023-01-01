@@ -47,7 +47,7 @@ const Project2 = () => {
   </div>
 </div>
 
-            <div className='mt-24 '>
+            <div className='mt-24 px-4 '>
                 <h2 className='text-5xl mb-4 font-bold'>Project Details</h2>
                 <p className='text-2xl font-bold'>Project Name: Rhadika’s Parlour- || <a href="https://beauty-parlour-9605d.web.app/">Live link</a> || <a href="https://github.com/tanvir8685/beauty-parlour-clientside-a11">Git Client Link</a> || <a href="https://github.com/tanvir8685/beauty-parlour-server-a11">Git Server Link</a> </p>
                 <p className='text-xl my-4'><span className='text-2xl font-bold'>About</span>: I built this website to get people's comments on a specific service. By clicking on details
